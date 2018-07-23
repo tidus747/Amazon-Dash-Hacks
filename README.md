@@ -29,10 +29,10 @@ Una vez conocida la dirección MAC podemos proceder a conectar el Dash button a 
 1. Descargar la aplicación de Amazon de la tienda oficial en nuestro dispositivo móvil.
 2. Ir a Mi Cuenta > Dash Button y Dispositivos
 3. Configura el Dash Button y conectalo a la misma red Wi-fi de tu dispositivo.
-4. Cierra la App en el momento en que te salga la lista de productos para comprar. **NO SELECCIONES NINGUN PRODUCTO DE LA LISTA**.De esta manera, el botón
-no pedirá un artículo cuando lo pulsemos y no llenaremos la casa de trastos pedidos por accidente. 
+4. Cierra la App en el momento en que te salga la lista de productos para comprar. **NO SELECCIONES NINGÚN PRODUCTO DE LA LISTA**.De esta manera, el botón
+no pedirá un artículo cuando lo pulsemos y no llenaremos la casa de trastos pedidos por accidente.
 
 ## Referencias
 
--[Cómo conocer la dirección MAC del Dash Button](https://medium.com/@bahman./hack-the-amazon-dash-button-jk29lp-on-macos-sierra-fe8b2312a471)
--[Listener para el Dash Button con Raspberry Pi](https://www.nathankowald.com/blog/2017/05/dash-button-with-raspberry-pi/)
+- [Cómo conocer la dirección MAC del Dash Button](https://medium.com/@bahman./hack-the-amazon-dash-button-jk29lp-on-macos-sierra-fe8b2312a471)
+- [Listener para el Dash Button con Raspberry Pi](https://www.nathankowald.com/blog/2017/05/dash-button-with-raspberry-pi/)
