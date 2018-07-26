@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 '''
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -17,10 +19,17 @@ Original Code -> https://www.nathankowald.com/blog/2017/05/dash-button-with-rasp
 '''
 
 from pydhcplib.dhcp_network import *
+import telebot
 
-def do_something():
-	print("button has been pressed")
+# Parámetros de configuración del BOT
+TOKEN = ''
+telegram_bot = telebot.TeleBot(TOKEN)
+GROUP = ''
+chat_id = ''
 
+def send_message():
+	global TOKEN, telegram_bot, GROUP, chat_id
+	telegram_bot.send_message(chat_id,'Pulsado el dash')
 
 netopt = {'client_listen_port':"68", 'server_listen_port':"67", 'listen_address':"0.0.0.0"}
 
@@ -57,8 +66,9 @@ class DashButtons():
 		return False
 
 
+# Comienzo del código principal
 dashbuttons = DashButtons()
-dashbuttons.register("50:f4:de:f1:3b:a0", do_something)
+dashbuttons.register("68:54:fd:af:c8:74", send_message) # Declaramos el dash que vamos a utilizar con su dirección MAC asociada
 server = Server(netopt, dashbuttons)
 
 while True :
