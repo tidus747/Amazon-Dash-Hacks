@@ -11,6 +11,18 @@ y el producto llegará a tu casa al día siguiente (siempre y cuando seas usuari
 Sin embargo, la misma idea de acelerar el proceso de compra con el botón puede aplicarse a otros procesos. La idea es *hackear* el
 Dash Button para que haga lo que se requiera con solo pulsar el botón.
 
+## Instalación de requisitos
+
+Previamente es necesario instalar una serie de utilidades y módulos de Python. Para ello, introduciremos los siguientes
+comandos en la terminal de nuestro *Linux*.
+
+`# Actualizamos el sistema
+sudo apt-get update && sudo apt-get upgrade
+
+# Instalación de  pydhcplib
+sudo apt-get install python-pip
+sudo pip install pydhcplib`
+
 ## Configuración inicial
 
 ### Dirección MAC del Dash Button

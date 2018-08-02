@@ -19,9 +19,17 @@ Original Code -> https://www.nathankowald.com/blog/2017/05/dash-button-with-rasp
 '''
 
 from pydhcplib.dhcp_network import *
+import telebot
+
+# Parámetros de configuración del BOT
+TOKEN = ''
+telegram_bot = telebot.TeleBot(TOKEN)
+GROUP = ''
+chat_id = ''
 
 def send_message():
-	print("Se ha pulsad el dash")
+	global TOKEN, telegram_bot, GROUP, chat_id
+	telegram_bot.send_message(chat_id,'Pulsado el dash')
 
 netopt = {'client_listen_port':"68", 'server_listen_port':"67", 'listen_address':"0.0.0.0"}
 
