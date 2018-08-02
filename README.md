@@ -17,7 +17,9 @@ Previamente es necesario instalar una serie de utilidades y módulos de Python. 
 comandos en la terminal de nuestro *Linux*.
 
 `sudo apt-get update && sudo apt-get upgrade`
+
 `sudo apt-get install python-pip`
+
 `sudo pip install pydhcplib`
 
 ## Configuración inicial
