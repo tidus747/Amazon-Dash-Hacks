@@ -16,12 +16,9 @@ Dash Button para que haga lo que se requiera con solo pulsar el botón.
 Previamente es necesario instalar una serie de utilidades y módulos de Python. Para ello, introduciremos los siguientes
 comandos en la terminal de nuestro *Linux*.
 
-`# Actualizamos el sistema
-sudo apt-get update && sudo apt-get upgrade
-
-# Instalación de  pydhcplib
-sudo apt-get install python-pip
-sudo pip install pydhcplib`
+`sudo apt-get update && sudo apt-get upgrade`
+`sudo apt-get install python-pip`
+`sudo pip install pydhcplib`
 
 ## Configuración inicial
 
