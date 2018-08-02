@@ -21,7 +21,7 @@ Original Code -> https://www.nathankowald.com/blog/2017/05/dash-button-with-rasp
 from pydhcplib.dhcp_network import *
 
 def send_message():
-	print("Se ha pulsad el dash")
+	print("Se ha pulsado el dash")
 
 netopt = {'client_listen_port':"68", 'server_listen_port':"67", 'listen_address':"0.0.0.0"}
 
