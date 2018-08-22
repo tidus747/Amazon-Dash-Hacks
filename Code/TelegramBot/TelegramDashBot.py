@@ -22,10 +22,24 @@ from pydhcplib.dhcp_network import *
 import telebot
 
 # Parámetros de configuración del BOT
-TOKEN = ''
+try:
+    with open("apiKey.txt", "r") as file:
+        chat_id = file.readline().strip()
+		GROUP = file.readline().strip()
+		TOKEN = file.readline().strip()
+        if len(chat_id) == 0 and len(GROUP) == 0:
+            print("No se han introducido los ID correctos. Revisa el fichero apiKey.txt")
+            exit()
+		if len(TOKEN) == 0:
+			print("El TOKEN introducido no es correcto. Revisa el fichero apiKey.txt")
+			exit()
+
+except FileNotFoundError:
+    open("apiKey.txt", "w").close()
+    print("Por favor introduce el chat_id, el group_id y el token del BOT en el fichero api_key.txt")
+    exit()
+
 telegram_bot = telebot.TeleBot(TOKEN)
-GROUP = ''
-chat_id = ''
 
 def send_message():
 	global TOKEN, telegram_bot, GROUP, chat_id
@@ -64,7 +78,6 @@ class DashButtons():
 			self.buttons[mac]()
 			return True
 		return False
-
 
 # Comienzo del código principal
 dashbuttons = DashButtons()
