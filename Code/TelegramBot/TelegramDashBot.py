@@ -25,12 +25,12 @@ import telebot
 try:
     with open("apiKey.txt", "r") as file:
         chat_id = file.readline().strip()
-		GROUP = file.readline().strip()
-		TOKEN = file.readline().strip()
+        GROUP = file.readline().strip()
+        TOKEN = file.readline().strip()
         if len(chat_id) == 0 and len(GROUP) == 0:
             print("No se han introducido los ID correctos. Revisa el fichero apiKey.txt")
             exit()
-		if len(TOKEN) == 0:
+        if len(TOKEN) == 0:
 			print("El TOKEN introducido no es correcto. Revisa el fichero apiKey.txt")
 			exit()
 
@@ -43,7 +43,7 @@ telegram_bot = telebot.TeleBot(TOKEN)
 
 def send_message():
 	global TOKEN, telegram_bot, GROUP, chat_id
-	telegram_bot.send_message(chat_id,'Pulsado el dash')
+	telegram_bot.send_message(chat_id,'Hola')
 
 netopt = {'client_listen_port':"68", 'server_listen_port':"67", 'listen_address':"0.0.0.0"}
 
